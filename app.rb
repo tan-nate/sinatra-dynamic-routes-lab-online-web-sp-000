@@ -21,9 +21,9 @@ class App < Sinatra::Base
     @phrase_array = []
     @number.times do
       @phrase_array << @phrase
+    end
     @phrase_repeat = @phrase_array.join(" ")
     "#{@phrase_repeat}"
-    end
   end
 
 end
