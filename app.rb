@@ -24,7 +24,7 @@ class App < Sinatra::Base
     end
     @phrase_repeat = @phrase_array.join(" ")
     "#{@phrase_repeat}"
-    binding.pry
+    #binding.pry
   end
 
 end
