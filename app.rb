@@ -23,6 +23,7 @@ class App < Sinatra::Base
       @phrase_array << @phrase
     @phrase_repeat = @phrase_array.join(" ")
     "#{@phrase_repeat}"
+    end
   end
 
 end
