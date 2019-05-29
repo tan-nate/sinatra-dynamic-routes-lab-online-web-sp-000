@@ -46,10 +46,10 @@ class App < Sinatra::Base
     elsif @operation == "divide"
       @operation = "/"
     end
-    
+
     @number1 = params[:number1]
     @number2 = params[:number2]
-    
+
     @eval = eval "#{@number1} #{@operation} #{@number2}"
     "#{@eval}"
   end
