@@ -41,6 +41,7 @@ class App < Sinatra::Base
     @number2 = params[:number2]
     @eval = "#{@number1} #{@operation} #{@number2}".eval
     "#{@eval}"
+    binding.pry
   end
 
 end
