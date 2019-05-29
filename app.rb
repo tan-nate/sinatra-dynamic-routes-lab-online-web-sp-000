@@ -17,9 +17,12 @@ class App < Sinatra::Base
 
   get '/say/:number/:phrase' do
     @number = params[:number].to_i
-    @number_squared = @number ** 2
-    @number_squared_s = @number_squared.to_s
-    "#{@number_squared_s}"
+    @phrase = params[:phrase]
+    @phrase_array = []
+    @number.times do
+      @phrase_array << @phrase
+    @phrase_repeat = @phrase_array.join(" ")
+    "#{@phrase_repeat}"
   end
 
 end
